@@ -22,6 +22,7 @@ The project is structured to show three important functionalities, each one on a
 
 The first activity started on foreground is **MainActivity** that show the different options of the app and check the app permissions.
 
+![Alt text](https://github.com/AccentSystems/iBKS-HelloWorld-Android/tree/master/img/Screenshot1.png)
 
 <span id="_Toc456607171" class="anchor"><span id="_Toc456859051" class="anchor"></span></span>App permissions
 ========================================================================================================

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationDemo">
+
+
+    <ImageView
+        android:id="@+id/notifRadar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:src="@drawable/notif_radar"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_above="@+id/editBtn"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/notifWave"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:src="@drawable/notif_wave"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:alpha="0.6"
+        android:visibility="invisible"
+        android:layout_above="@+id/editBtn"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/notifDevice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:src="@drawable/notif_device"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_above="@+id/editBtn"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/editBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="iBKS Settings"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:clickable="true"
+        android:background="@drawable/custom_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"/>
+
+    <!-- <RelativeLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:background="#EBC340"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/settingsTitle"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3a3c3e"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp"
+            android:text="SEARCHING FOR:" />
+
+        <TextView
+            android:id="@+id/settingsUUID"
+            android:layout_below="@+id/settingsTitle"
+            android:layout_alignLeft="@+id/settingsTitle"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3a3c3e"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/settingsDist"
+            android:layout_below="@+id/settingsUUID"
+            android:layout_alignLeft="@+id/settingsTitle"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3a3c3e"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/settingsMsg"
+            android:layout_below="@+id/settingsDist"
+            android:layout_alignLeft="@+id/settingsTitle"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"
+            android:textColor="#3a3c3e"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/editBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="EDIT"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:clickable="true"
+            android:background="@drawable/custom_button"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout> -->
+
+
+
+
+</RelativeLayout>

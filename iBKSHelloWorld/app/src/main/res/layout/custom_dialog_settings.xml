@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/settTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#3a3c3e"
+        android:textSize="22sp"
+        android:text="SETTINGS" />
+
+    <TextView
+        android:id="@+id/settUuid"
+        android:layout_alignLeft="@+id/settTitle"
+        android:layout_below="@+id/settTitle"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#3a3c3e"
+        android:textSize="18sp"
+        android:text="UUID" />
+
+    <Spinner
+        android:id="@+id/spinneruid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/settUuid"
+        android:entries="@array/frametype_array"
+        android:padding="4dp"
+        android:background="@drawable/custom_edittext"
+        android:layout_alignStart="@+id/settUuid"
+        android:layout_marginRight="5dp"
+        >
+    </Spinner>
+
+    <EditText
+        android:id="@+id/uuid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_below="@+id/spinneruid"
+        android:layout_marginTop="5dp"
+        android:textSize="10sp"
+        android:maxLength="42"
+        android:gravity="center"
+        android:digits="0123456789abcdefABCDEF-"
+        android:background="@drawable/custom_edittext"
+        android:layout_alignStart="@+id/spinneruid"
+        android:layout_alignEnd="@+id/spinneruid"/>
+
+    <!--EditText
+        android:id="@+id/uuid1"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:layout_below="@+id/spinneruid"
+        android:layout_marginTop="5dp"
+        android:textSize="10sp"
+        android:maxLength="8"
+        android:gravity="center"
+        android:digits="0123456789abcdefABCDEF"
+        android:background="@drawable/custom_edittext"
+        android:layout_alignStart="@+id/settUuid"/>
+
+    <TextView
+        android:id="@+id/sep1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="20sp"
+        android:layout_margin="1dp"
+        android:layout_toRightOf="@id/uuid1"
+        android:layout_alignBottom="@+id/uuid1"
+        android:layout_alignTop="@+id/uuid1"/>
+
+    <EditText
+        android:id="@+id/uuid2"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textSize="10sp"
+        android:maxLength="4"
+        android:gravity="center"
+        android:digits="0123456789abcdefABCDEF"
+        android:background="@drawable/custom_edittext"
+        android:layout_toRightOf="@+id/sep1"
+        android:layout_alignTop="@+id/uuid1"
+        android:layout_alignBottom="@+id/uuid1"/>
+
+    <TextView
+        android:id="@+id/sep2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="20sp"
+        android:layout_margin="1dp"
+        android:layout_toRightOf="@id/uuid2"
+        android:layout_alignBottom="@+id/uuid1"
+        android:layout_alignTop="@+id/uuid1"/>
+
+    <EditText
+        android:id="@+id/uuid3"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textSize="10sp"
+        android:maxLength="4"
+        android:gravity="center"
+        android:digits="0123456789abcdefABCDEF"
+        android:background="@drawable/custom_edittext"
+        android:layout_toRightOf="@+id/sep2"
+        android:layout_alignTop="@+id/uuid1"
+        android:layout_alignBottom="@+id/uuid1"/>
+
+    <TextView
+        android:id="@+id/sep3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="20sp"
+        android:layout_margin="1dp"
+        android:layout_toRightOf="@id/uuid3"
+        android:layout_alignBottom="@+id/uuid1"
+        android:layout_alignTop="@+id/uuid1"/>
+
+    <EditText
+        android:id="@+id/uuid4"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textSize="10sp"
+        android:maxLength="4"
+        android:gravity="center"
+        android:digits="0123456789abcdefABCDEF"
+        android:background="@drawable/custom_edittext"
+        android:layout_toRightOf="@+id/sep3"
+        android:layout_alignTop="@+id/uuid1"
+        android:layout_alignBottom="@+id/uuid1"/>
+
+    <TextView
+        android:id="@+id/sep4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="20sp"
+        android:layout_margin="1dp"
+        android:layout_toRightOf="@id/uuid4"
+        android:layout_alignBottom="@+id/uuid1"
+        android:layout_alignTop="@+id/uuid1"/>
+
+    <EditText
+        android:id="@+id/uuid5"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textSize="10sp"
+        android:maxLength="12"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:digits="0123456789abcdefABCDEF"
+        android:background="@drawable/custom_edittext"
+        android:layout_toRightOf="@+id/sep4"
+        android:layout_alignTop="@+id/uuid1"
+        android:layout_alignBottom="@+id/uuid1"/-->
+
+    <TextView
+        android:id="@+id/settRange"
+        android:layout_alignLeft="@+id/settTitle"
+        android:layout_below="@+id/uuid"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#3a3c3e"
+        android:textSize="18sp"
+        android:text="RANGE" />
+
+    <Spinner
+        android:id="@+id/distSpinner"
+        android:layout_below="@id/settRange"
+        android:layout_marginTop="5dp"
+        android:layout_alignStart="@+id/spinneruid"
+        android:layout_alignEnd="@+id/spinneruid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:background="@drawable/custom_edittext"
+        android:entries="@array/distance"/>
+
+    <TextView
+        android:id="@+id/settMsg"
+        android:layout_alignLeft="@+id/settTitle"
+        android:layout_below="@+id/distSpinner"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#3a3c3e"
+        android:textSize="18sp"
+        android:text="MESSAGE" />
+
+    <EditText
+        android:id="@+id/msgg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:padding="2dp"
+        android:textSize="14sp"
+        android:background="@drawable/custom_edittext"
+        android:layout_below="@id/settMsg"
+        android:layout_marginTop="5dp"
+        android:layout_alignStart="@+id/spinneruid"
+        android:layout_alignEnd="@+id/spinneruid"
+        android:lines="6"
+        android:maxLines="6" />
+
+    <TextView
+        android:id="@+id/errorMsg"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/msgg"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:text="Please fill all the text fields!" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/errorMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:layout_alignLeft="@+id/msgg"
+        android:layout_alignRight="@+id/msgg"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:text="SAVE"/>
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_below="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/msgg"
+        android:layout_alignRight="@+id/msgg"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/custom_button"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:text="CANCEL"/>
+
+</RelativeLayout>

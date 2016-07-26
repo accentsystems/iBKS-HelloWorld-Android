@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">iBKS Hello World</string>
+    <string name="title_activity_scan">ScanActivity</string>
+    <string name="title_activity_notification">NotificationDemo</string>
+
+
+    <string-array name="distance">
+        <item>Immediate</item>
+        <item>Near</item>
+        <item>Far</item>
+    </string-array>
+
+    <string-array name="frametype_array">
+        <item>iBeacon [UUID-Major-Minor]</item>
+        <item>Eddystone-UID [Instance-Namespace]</item>
+    </string-array>
+</resources>

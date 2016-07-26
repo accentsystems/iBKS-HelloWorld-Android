@@ -18,7 +18,7 @@ After download de “iBKS Hello World” project, you only have to open it on An
 The project is structured to show three important functionalities, each one on a different class:
 - **ScanActivity**: scans and list the beacons that are advertising around and allows discovering services and characteristics.
 - **NotificationDemo**: Show a notification dialog on App triggered by a specific beacon packet detected.
-- **BackgroundScan**
+- **BackgroundScan**: Starts background scan that allows to detect beacons and do some actions (send notification, open app, ...) even when the app is stopped.
 
 The first activity started on foreground is **MainActivity** that show the different options of the app and check the app permissions.
 
